@@ -1,4 +1,5 @@
 import java.util.*;
+import java.io.*;
 public class RomanToDecimal {
     public static void romanToDecimal(java.lang.String romanNumber) {
         int decimal = 0;
@@ -55,9 +56,13 @@ public class RomanToDecimal {
         }
     }
 
-    public static void main(java.lang.String args[]) {
+    public static void main(String args[]) throws Exception {
     
-        romanToDecimal("XVII");
+        //romanToDecimal("XVII");
+        String a;
+        BufferedReader vc=new BufferedReader(new InputStreamReader(System.in));
+        a=vc.readLine();
+        romanToDecimal(a);
     
     }
 }
